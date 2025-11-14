@@ -1,0 +1,173 @@
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>services</title>
+    <link rel="stylesheet" href="./font-awesome/css/all.min.css">
+    <style>
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: verdana;
+    text-decoration: none;
+}
+body{
+	width:100%;
+    background-color:rgb(223, 216, 213);
+}
+/*stylisation de header et son contenu*/
+header{
+    width: 100%;
+    height: 6.5rem;
+    background-color: rgb(114, 113, 63);
+    display: flex;
+    align-items: center;
+	gap:40px;
+    position: fixed;
+}
+.logo{
+    width: 20%;
+    height: 6.5rem;
+}
+.logo>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+	}
+    .sam{
+	position:relative;
+	}
+.sam input
+{
+width:200px;
+background-color:rgb(223, 216, 213);
+}
+.sam i{
+position:absolute;
+ left:10px; top:10px;
+}
+header input{
+    width: 20%;
+    height: 2rem;
+    padding-left: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(223, 216, 213);
+    outline: none;
+}
+
+header>nav{
+    width: 80%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+	padding-right:10px;
+}
+header>nav>a{
+    width: 23%;
+    height: 2.2rem;
+    border: 1px solid rgb(223, 216, 213);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	padding:0px 8px 0px 8px ;
+	background-color:rgb(223, 216, 213);
+	color:black;
+}
+header>nav>a:hover{
+ background:whitesmoke;
+}
+
+main{
+    padding-top:10px;
+    width: 100%;
+    height:79rem;
+
+}
+h1{
+    padding-top: 120px;
+    padding-left: 500px;
+}
+
+.s1{
+	width:100%;
+	height:300px;
+	display:flex;
+	gap:30px;
+	padding:20px;
+}
+img{
+ width:31%;
+ height:300px;
+}
+p{
+    padding: 10px 20px 10px 20px;
+    text-align: justify;
+    font-size: 20px;
+}
+footer{
+    width: 100%;
+    height: 9rem;
+    background-color: rgb(114, 113, 63);
+    display: flex;
+    gap: 10px;
+}
+.lieu{
+    width: 33%;
+    flex-direction: column;
+	display:flex;
+    align-items: center;
+    justify-content: center;
+	padding-left:500px;
+}
+    </style>
+    </head>
+  
+    <body>
+     <header>
+    <div class="logo" ><img  src="images/vvv.png" /></div>
+	
+	<div class="sam" >
+	<input type="search" placeholder="search">  
+	<i class="fas fa-search" ></i>
+	</div>
+	 
+	
+    <nav>
+	  <a target="_blank"  href="index.html">accueil</a>
+	  <a target="_blank"  href="contact.html">contact</a>
+	  <a target="_blank"  href="historique.html">historique</a>
+	  <a target="_blank"  href="mission.html">mission</a>
+	  <a target="_blank"  href="partenariat.html">partenariat</a>
+	  <a target="_blank"  href="services.html">services</a>
+      <a target="_blank"  href="connexion.html">connexion</a>
+	</nav>
+    </header>
+     <main>
+        <h1>Nos services:</h1>
+         <div class="s1">
+             <img src="images/111.jpg">
+            <img src="images/333.jpg">
+            <img src="images/222.jpg">
+        </div>
+         <div class="s1">
+            <img src="images/444.jpg">
+            <img src="images/555.jpg">
+            <img src="images/666.jpg">
+        </div>
+        <div class="s1">
+            <img src="images/777.jpg">
+            <img src="images/888.jpg">
+            <img src="images/1000.jpg">
+        </div>
+        
+        <p><strong>Chaque service se payera en considerant les materiaux de fabrication ce service, donc on ne peut pas fixer le tarifs parceque tous les clients  choisissent les materiaux differents comme celles qui voudront utiliser des services des materiaux plus chers.</strong></p>
+         <footer>
+			<div class="lieu">
+				<h3>Biu-bst-12-109-2024</h3>
+			</div>
+	</footer>
+
+     </main>
+    </body>
+</html>

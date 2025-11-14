@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - SmartResto</title>
+    <link rel="stylesheet" href="font-awesome/css/all.min.css">
+</head>
+<style>
+ header{
+    width: 100%;
+    height: 6.5rem;
+    background-color: rgb(114, 113, 63);
+    display: flex;
+    align-items: center;
+	gap:40px;
+    position: fixed;
+}
+.logo{
+    width: 20%;
+    height: 6.5rem;
+}
+.logo>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+	}
+    header>.sam{
+	position:relative;
+	width:15% ;
+	height: 100% ;
+	display: flex;
+	align-items: center;
+	padding-left: 15px;
+	}
+.sam input
+{
+width:150px	;
+background-color:rgb(223, 216, 213);
+height: 30px; 
+padding-left:50px ;
+border: 1px solid rgb(241, 233, 233);
+}
+header>.sam>i{
+position:absolute;
+padding-left: 10px;
+}
+header input{
+    width: 20%;
+    height: 2rem;
+    padding-left: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(119, 118, 118);
+    outline: none;
+}
+
+header>nav{
+    width: 80%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+	padding-right:10px;
+}
+header>nav>a{
+    width: 23%;
+    height: 2.2rem;
+    border: 1px solid rgb(223, 216, 213);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	padding:0px 8px 0px 8px ;
+	background-color:rgb(223, 216, 213);
+	color:black;
+}
+header>nav>a:hover{
+ background:whitesmoke;
+}
+  .page_inscription{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color:var(--color3);
+        color: #333;
+        min-height: 93vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px
+    }
+    .inscription-container{
+        background-color: white;
+        width: 350px;
+        margin-top: 60px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 1px 2px 20px rgb(0,0,0,0.7);
+    }
+    h1{
+        color: rgb(114, 113, 63);;
+        display: flex;
+        justify-content: center;
+    }
+    form{
+        display: flex;flex-direction: column
+    }
+  label{
+      display: block;
+      margin-bottom: 5px;
+     
+  }
+  #name{
+     position: absolute;
+     top: 270px;
+     left: 510px;
+     z-index: 1;
+  }
+  input{
+    padding: 10px;
+    border-radius:5px;
+    z-index: 0;
+    font-size: 1rem;
+    position: relative;
+    border: 1px solid gray;
+    border: 1px solid  rgb(114, 113, 63);;
+    box-shadow: var(--shadow);
+  }
+  .input{
+    padding: 10px;
+    border-radius:5px;
+    font-size: 1rem;
+    font-style: italic;
+    border: 1px solid gray;
+    border: 1px solid  rgb(114, 113, 63);;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: var(--shadow);
+  }
+  #input{
+    border: none;
+    padding: 0;
+    width: 93%;
+    box-shadow:none ;
+  }
+  .input i{
+    color: rgb(0,0,0,0.9);
+    cursor: pointer;
+  }
+  select {
+    padding: 10px;
+    border-radius:5px;
+    font-size: 1rem;
+    border: 1px solid gray;
+    box-shadow: var(--shadow);
+    margin-bottom: 20px;
+  }
+  input:focus, select:focus{
+    outline: none;
+    font-style: italic; 
+  }
+  button{
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    background-color:   rgb(114, 113, 63);;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+  }
+</style>
+<body>
+  <header>
+    <div class="logo" ><img  src="images/vvv.png" /></div>
+	
+	<div class="sam" >
+	<input type="search" placeholder="search">  
+	<i class="fas fa-search" ></i>
+	</div>
+	 
+	
+    <nav>
+	  <a target="_blank"  href="index.html">accueil</a>
+	  <a target="_blank"  href="contact.html">contact</a>
+	  <a target="_blank"  href="historique.html">historique</a>
+	  <a target="_blank"  href="mission.html">mission</a>
+	  <a target="_blank"  href="partenariat.html">partenariat</a>
+	  <a target="_blank"  href="services.html">services</a>
+	  <a target="_blank"  href="connexion.html">connexion</a>
+	</nav>
+   </header>
+    <div class="page_inscription">
+        <div class="inscription-container">
+            <h1>Inscription</h1>
+            <div class="logo">
+              <span style="color:  rgb(114, 113, 63);; "><em style=" /*color: #285AEB;*/ font-size: 40px;">A</em>telier</span>
+              <span style="color:  rgb(114, 113, 63);; "><em style=" /*color: #ac102a;*/font-size: 40px;">M</em>enuiserie</span>
+            </div>
+            <br>
+        
+        <form action="">
+            <label for="password" >Nom et prenom</label>
+            <input type="text" placeholder="ex: IRANKUNDA Fiston" required><br>
+            <!--<input type="text"  required><br>-->
+
+            <label for="phone" >Numero de telephone</label>
+            <input type="tel" placeholder="ex: 62336392" required><br>
+
+                 <label for="email" >Email</label>
+            <input type="tel" placeholder="votre email" required><br>
+            
+            
+            <label for="password">Mot de passe</label>
+            <div class="input">
+              <input id="input" type="password" placeholder="********" required>
+              <i class="fas fa-eye"></i>
+            </div>
+            <button type="submit" >S'inscrire</button>
+        </form>
+        <p>déja inscrit? <a href="connexion.html">Connectez-vous ici</a></p>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,190 @@
+ <html>
+ <head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="font-awesome/css/all.min.css">
+  <title>accueil</title>
+  <style>
+   *{
+    margin: 0;
+    padding: 0;
+    font-family: verdana;
+    text-decoration: none;
+}
+body{
+	width:100%;
+	height:100%;
+    background-color:rgb(223, 216, 213);
+}
+/*stylisation de header et son contenu*/
+header{
+    width: 100%;
+    height: 6.5rem;
+    background-color: rgb(114, 113, 63);
+    display: flex;
+    align-items: center;
+	gap:40px;
+    position: fixed;
+}
+.logo{
+    width: 20%;
+    height: 6.5rem;
+}
+.logo>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+	}
+header input{
+    width: 20%;
+    height: 2rem;
+    padding-left: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(223, 216, 213);
+    outline: none;
+}
+
+header>nav{
+    width: 80%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+	padding-right:10px;
+}
+header>nav>a{
+    width: 23%;
+    height: 2.2rem;
+    border: 1px solid rgb(223, 216, 213);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	padding:0px 8px 0px 8px ;
+	background-color:rgb(223, 216, 213);
+	color:black;
+}
+header>nav>a:hover{
+ background:whitesmoke;
+}
+
+
+main{
+width:100%;
+height:50rem;
+padding-top:150px;
+}
+h1{ 
+	display:flex;
+	justify-content:center;
+}
+h3{
+display:flex;
+align-items:center;
+justify-content:center;
+padding-top:10px;
+}
+.photo{
+	width:100%;
+	height:300px;
+	display:flex;
+	gap:30px;
+	padding:20px;
+}
+img{
+ width:31%;
+ height:300px;
+}
+p{
+ align-items:center;
+ text-align:justify;
+ padding:20px;
+ font-size:25px;
+ line-height:1,5px;
+}
+footer{
+    width: 100%;
+    height: 9rem;
+    background-color: rgb(114, 113, 63);
+    display: flex;
+    gap: 10px;
+}
+.lieu{
+    width: 33%;
+    flex-direction: column;
+	display:flex;
+    align-items: center;
+    justify-content: center;
+	padding-left:500px;
+}
+strong{
+	color:black;
+}
+.sam{
+	position:relative;
+}
+.sam input
+{
+width:200px;
+background-color:rgb(223, 216, 213);
+}
+.sam i{
+position:absolute;
+ left:10px; top:10px;
+}
+.nnn{
+	display:flex;
+	justify-content:center;
+	padding-bottom: 0px;
+}
+
+
+  </style>
+ </head>
+ <body>
+   <header>
+    <div class="logo" ><img  src="images/vvv.png" /></div>
+	
+	<div class="sam" >
+	<input type="search" placeholder="search">  
+	<i class="fas fa-search" ></i>
+	</div>
+	 
+	
+    <nav>
+	  <a target="_blank"  href="accueil.html">accueil</a>
+	  <a target="_blank"  href="contact.html">contact</a>
+	  <a target="_blank"  href="historique.html">historique</a>
+	  <a target="_blank"  href="mission.html">mission</a>
+	  <a target="_blank"  href="partenariat.html">partenariat</a>
+	  <a target="_blank"  href="services.html">services</a>
+	  <a target="_blank"  href="connexion.html">connexion</a>
+	</nav>
+   </header>
+   <main>
+	   <h3>Soyez bienvenus à notre atelier de menuiserie</h3>
+	   <br>
+	   <div class="photo">
+	    <img src="images/aaa.jpg">
+		<img src="images/ccc.jpg">
+		<img src="images/bbb.jpg">
+	   </div>
+	   <p>L’atelier de menuiserie <strong>"Les Mains Du Bois" </strong>est un espace <strong>de création, de transformation et d’innovation</strong> dans le domaine du bois. Il s’adresse à une clientèle variée : particuliers, entreprises, ONG, écoles, etc. Notre engagement est de répondre aux besoins spécifiques de chaque client avec des produits solides, esthétiques et durables. Nous croyons en l’importance de l’artisanat local et de la qualité artisanale dans un monde de plus en plus industrialise. 
+		Nous accueillons chaleureusement toute personne désireuse de commander des meubles sur mesure, de faire restaurer du mobilier ou de suivre une formation en menuiserie. Chez nous, chaque client est unique et chaque projet est traite avec soin, attention, et professionnalisme.
+	   </p>
+       <a class="nnn" href="inscription.html">inscription</a>
+	   
+   </main>
+   <footer>
+			<div class="lieu">
+				<h3>Lieu de travail</h3>
+				<ul>
+					<li>Bujumbura, Burundi</li>
+					<li>Cibitoke ,Rugombo</li>
+					<li>Munyika pres de rond-point</li>
+				</ul>
+				<h3>Biu-bst-12-109-2024</h3>
+			</div>
+	</footer>
+   
+ </body>
+</html>

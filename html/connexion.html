@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="font-awesome/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - SmartResto</title>
+</head>
+<style>
+*{
+ margin: 0;
+ padding: 0;
+}
+
+
+/* HEADER */
+header{
+    width: 100%;
+    height: 6.5rem;
+    background-color: rgb(114, 113, 63);
+    display: flex;
+    align-items: center;
+	gap:40px;
+    position: fixed;
+}
+.logo{
+    width: 20%;
+    height: 6.5rem;
+}
+.logo>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+	}
+header input{
+    width: 20%;
+    height: 2rem;
+    padding-left: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(223, 216, 213);
+    outline: none;
+}
+.sam{
+	position:relative;
+	}
+.sam input
+{
+width:200px;
+background-color:rgb(223, 216, 213);
+}
+.sam i{
+position:absolute;
+ left:10px; top:10px;
+}
+header>nav{
+    width: 80%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+	padding-right:10px;
+}
+header>nav>a{
+    width: 23%;
+    height: 2.2rem;
+    border: 1px solid rgb(223, 216, 213);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	padding:0px 8px 0px 8px ;
+	background-color:rgb(223, 216, 213);
+	color:black;
+}
+header>nav>a:hover{
+ background:whitesmoke;
+}
+
+
+.page_connexion{
+    padding-top: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: gray;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color3);
+}   
+.connexion-container{
+    padding: 30px;
+    border-radius: 10px;
+    background-color: white ;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    justify-content: start;
+    height:auto;
+    box-shadow: 1px 2px 20px rgb(0,0,0,0.7);
+}
+.connexion-contain{
+    width: 260px;
+    height:70vh;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 0;
+    transform: rotate(-4deg);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    min-width:  200px;
+    box-sizing: border-box;
+}
+
+h1{
+    color:  rgb(114, 113, 63);;
+    text-align: center ;
+    text-decoration: none;
+}
+label{
+    display: block;
+    font-weight: 600;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    color: var(--color1);
+    border: 1px solid  rgb(114, 113, 63);;
+    width: 100%;
+    padding: 10px;
+    margin-right: 20px;
+}
+    input:focus{
+    background-color: whitesmoke;
+    outline: none;
+    font-weight: 600;
+    color: gray;
+}
+button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    background-color:  rgb(114, 113, 63);;
+    color: whites;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+</style>
+<body>
+  <header>
+    <div class="logo" ><img  src="images/vvv.png" /></div>
+	
+	<div class="sam" >
+	<input type="search" placeholder="search">  
+	<i class="fas fa-search" ></i>
+	</div>
+	 
+	
+    <nav>
+	  <a target="_blank"  href="index.html">accueil</a>
+	  <a target="_blank"  href="contact.html">contact</a>
+	  <a target="_blank"  href="historique.html">historique</a>
+	  <a target="_blank"  href="mission.html">mission</a>
+	  <a target="_blank"  href="partenariat.html">partenariat</a>
+	  <a target="_blank"  href="services.html">services</a>
+	  <a target="_blank"  href="connexion.html">connexion</a>
+	</nav>
+   </header>
+   <div class="page_connexion">
+        <div class="connexion-container">   
+            <h1>connexion</h1>
+           
+
+            <form action="">
+                 <div class="logo">
+                <span style="color:  rgb(114, 113, 63);"><em style="  font-size: 40px;">A</em>telier</span>
+                <span style="color:  rgb(114, 113, 63); "><em style="color:  rgb(114, 113, 63); font-size: 40px;">M</em>enuiserie</span>
+            </div><br>
+
+                <label for="">votre email</label>
+                <input type="email" placeholder="ex:vianney@g.com" color="red" minlength="8" required>
+                <label for="">votre mot de passe</label>
+                <input type="password" placeholder="au moins 5caracteres " minlength="5" required>
+                <button type="submit">se connecter</button>
+
+
+                <div class="register-link">
+                    <p>pas encore inscrit? <a href="inscription.html">creer un nouveau compte</a></p>
+                    <p><a href="">mot de passe oublie?</a></p>
+                </div>
+            </form>
+            
+        </div> 
+    </div>
+</body>
+</html>
